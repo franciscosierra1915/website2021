@@ -39,12 +39,12 @@ const Gallery = ({photos}) => {
 
     return (
         <>
-        <div className="gallery">
+        <div className="gallery" style={selectedImg && {position : 'fixed'}}>
             <p>Photography:</p>
             {photos && <div className="row row-gallery">
                 {
                     photos.map((photo, index) => (
-                    <div className="col mt-4 col-image-container" key={photo}>
+                    <div className="col-md-4 mt-4 col-image-container" key={photo}>
                         <div className="image-container" onClick={() => handleClick(index, photo)}>
                             <MyImage image={photo}/>
                         </div>
