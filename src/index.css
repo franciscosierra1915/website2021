@@ -22,7 +22,11 @@ main {
   padding: 0 15px;
 }
 
-.headshot-row{
+.about-me{
+  margin-bottom: 15px;
+}
+
+.headshot-container{
   display: flex;
   justify-content: flex-start;
 
@@ -86,24 +90,25 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
+  overflow: hidden;
 
 }
 
-.img-container span {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  justify-content: flex-end;
-  font-size: x-large;
+.backdrop span {
+  position: absolute;
+  top: 0;
+  font-size:xx-large;
 }
 
-.img-container span:hover {
+.backdrop span:hover {
   cursor: pointer;
 }
 
 .img-container button {
   opacity: 0;
   height: 100%;
+  max-width: 60px;
+  width: 100%;
   background-color: rgb(255, 255, 255);
   border: none;
   transition: all 1.5s;
@@ -166,8 +171,8 @@ main {
   }
 }
 
-@media screen and (max-width: 400px) {
-  .headshot-row{
+@media screen and (max-width: 414px) {
+  .headshot-container{
     display: flex;
     justify-content: center;
   }
@@ -178,11 +183,13 @@ main {
     justify-content: center;
     align-items: center;
   }
+  .img-container{
+    overflow: visible;
+  }
   .img-container button {
     opacity: 1;
     height: auto;
     top: 100%;
-    margin-bottom: -10%;
     border: 1px solid black;
   }
 

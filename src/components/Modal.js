@@ -15,11 +15,11 @@ const Modal = ({selectedImg, setSelectedImg, handleNextPrev}) => {
     return (
         <div className='backdrop' onClick={(e) => handleClick(e)}>
             <div className="img-container">
-                <span onClick={() => exit()}>X</span>
-                <button className="previous" onClick={() => handleNextPrev('previous')}>PREVIOUS</button>
+                <button className="previous" onClick={() => handleNextPrev('previous')}>PREV</button>
                 <img src={selectedImg} alt='enlarged pic'/>
                 <button className="next" onClick={() => handleNextPrev('next')}>NEXT</button>
             </div>
+            <span onClick={() => exit()}>X</span>
         </div>
     )
 }

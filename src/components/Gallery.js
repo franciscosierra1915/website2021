@@ -20,6 +20,12 @@ const Gallery = ({photos}) => {
     }
 
     useEffect(() => {
+        if(!selectedImg){
+            setSelectedIndex(null)
+        }
+    }, [selectedImg])
+
+    useEffect(() => {
         if(photos && selectedIndex !== null){
             if(selectedIndex < 0){
                 setSelectedImg(photos[photos.length + selectedIndex]);

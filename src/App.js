@@ -31,8 +31,8 @@ function App() {
     <main>
       <Router>
         <Container>
-          <Row>
-            <Col className="headshot-row">
+          <Row className="about-me">
+            <Col className="headshot-container">
               <Link to="/">
                 <div className="headshot-container"><img src={frank} alt="Francisco Sierra Headshot" /></div>
               </Link>
@@ -43,9 +43,6 @@ function App() {
                 <p>My name is Francisco Sierra, but you can call me Frank! I'm a web developer who loves photography, video and 3D animations. I write code that merges these things.</p>
               </div>
             </Col>
-          </Row>
-          <Row className="portfolio">
-            <Link to="/">Portfolio:</Link>
           </Row>
           <Switch>
             <Route exact path="/" render={() => <Portfolio/>}/>
