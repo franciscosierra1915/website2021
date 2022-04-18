@@ -7,7 +7,7 @@ const Gallery = ({photos}) => {
     const [selectedImg, setSelectedImg] = useState(null);
     const [selectedIndex, setSelectedIndex] = useState(null);
 
-    const handleClick = (index, photo) => {
+    const handleClick = (index) => {
         setSelectedIndex(index);
     }
 
@@ -34,18 +34,30 @@ const Gallery = ({photos}) => {
             }
             
         }
-    }, [selectedIndex, photos])
+    }, [selectedIndex, photos]);
+
+    const handleKeyDown = (e) => {
+        if(selectedIndex || selectedIndex === 0){
+            if(e.code === "ArrowRight" || e.code === "ArrowDown"){
+                handleNextPrev('next');
+            } else if (e.code === "ArrowLeft" || e.code === "ArrowUp") {
+                handleNextPrev('previous');
+            } else if (e.code === "Escape"){
+                setSelectedImg(null);
+            }
+        }
+    }
 
 
     return (
         <>
-        <div className="gallery" style={selectedImg && {position : 'fixed'}}>
+        <div className="gallery"  tabIndex="0" onKeyDown={(e) => handleKeyDown(e)}>
             <p>Photography:</p>
             {photos && <div className="row row-gallery">
                 {
                     photos.map((photo, index) => (
                     <div className="col-md-4 mt-4 col-image-container" key={photo}>
-                        <div className="image-container" onClick={() => handleClick(index, photo)}>
+                        <div className="image-container" onClick={() => handleClick(index)}>
                             <MyImage image={photo}/>
                         </div>
                     </div>

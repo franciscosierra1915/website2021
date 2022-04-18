@@ -12,6 +12,8 @@ const Modal = ({selectedImg, setSelectedImg, handleNextPrev}) => {
         setSelectedImg(null);
     }
 
+
+
     return (
         <div className='backdrop' onClick={(e) => handleClick(e)}>
             <div className="img-container">
