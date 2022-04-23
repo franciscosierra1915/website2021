@@ -47,7 +47,7 @@ li a {
 li a:hover{
   color: white;
   background-color: black;
-  transform: scale(1.05)
+  transform: scale(1.02)
 }
 
 p {
@@ -63,6 +63,7 @@ p {
   justify-content: flex-start;
   width: 250px;
   height: auto;
+
 }
 
 .bio-container {
@@ -78,7 +79,6 @@ p {
 .headshot-container img {
   width: 100%;
   height: auto;
-  border: 2px solid black;
 }
 
 .image-container {

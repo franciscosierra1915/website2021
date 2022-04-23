@@ -2,10 +2,10 @@ import React, {useEffect, useState} from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import frank from './photos/frank.jpg';
 import Gallery from './components/Gallery';
 import Portfolio from './components/Portfolio';
 import {storage} from './firebase';
+import WaveShader from "./components/WaveShader"
 // import photos from './photos/photos'
 
 
@@ -34,7 +34,9 @@ function App() {
           <Row className="about-me">
             <Col className="headshot-container">
               <Link to="/">
-                <div className="headshot-container"><img src={frank} alt="Francisco Sierra Headshot" /></div>
+                <div className="headshot-container">
+                  <WaveShader/>
+                  </div>
               </Link>
             </Col>
             <Col className="bio-container">
