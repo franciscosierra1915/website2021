@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const Portfolio = () => {
     return (
@@ -65,7 +65,7 @@ const Portfolio = () => {
                     </ul>
                 </Col> */}
             </Row>
-            <Row>
+            {/* <Row>
                 <p>Photography:</p>
                 <Col>
                     <ul>
@@ -74,7 +74,7 @@ const Portfolio = () => {
                         </li>
                     </ul>
                 </Col>
-            </Row>
+            </Row> */}
         </>
     )
 }
