@@ -5,52 +5,80 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-  sans-serif;
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
 }
 
 main {
-  display: flex;;
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   color: black;
   font-size: 18px;
   max-width: 800px;
-  font-family: serif;
+  font-family: "Avenir";
   margin: 0 auto;
   padding: 0 15px;
 }
 
-.about-me{
+ul {
+  padding: 0 !important;
+  margin-top: 10px !important;
+}
+
+li {
+  list-style: none;
+}
+
+li a {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  background: white;
+  padding: 4px 12px;
+  border: 2px solid #000;
+  box-shadow: 2px 2px 1px white, 2px 2px 1px 2px black;
+  display: inline-block;
+  width: 100%;
+  transition: transform 0.5s,
+}
+
+li a:hover{
+  color: white;
+  background-color: black;
+  transform: scale(1.05)
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+
+.about-me {
   margin-bottom: 15px;
 }
 
-.headshot-container{
+.headshot-container {
   display: flex;
   justify-content: flex-start;
-
+  width: 250px;
+  height: auto;
 }
 
 .bio-container {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 .bio {
   padding: 15px 0;
   text-align: center;
 }
 
-.headshot-container {
-  width: 250px;
-  height: auto;
-}
-
 .headshot-container img {
   width: 100%;
   height: auto;
+  border: 2px solid black;
 }
 
 .image-container {
@@ -70,7 +98,7 @@ main {
   cursor: pointer;
 }
 
-.backdrop{
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -91,13 +119,12 @@ main {
   justify-content: center;
   align-items: flex-end;
   overflow: hidden;
-
 }
 
 .backdrop span {
   position: absolute;
   top: 0;
-  font-size:xx-large;
+  font-size: xx-large;
 }
 
 .backdrop span:hover {
@@ -147,24 +174,23 @@ main {
   overflow: hidden;
 }
 
-.gallery:focus-visible{
+.gallery:focus-visible {
   outline-color: white;
 }
 
-.col-image-container{
+.col-image-container {
   overflow: hidden;
 }
 
-@media screen and (max-width: 1200px){
-
-  .img-container img{
+@media screen and (max-width: 1200px) {
+  .img-container img {
     width: 100%;
   }
-  .img-container{
+  .img-container {
     width: 90%;
     height: auto;
   }
-  .backdrop span{
+  .backdrop span {
     display: flex;
     justify-content: center;
     background-color: white;
@@ -172,44 +198,39 @@ main {
   }
 }
 
-@media screen and (max-width: 1024px){
-
-  .img-container button{
+@media screen and (max-width: 1024px) {
+  .img-container button {
     opacity: 1;
     border: 1px solid black;
   }
-
 }
 
 @media screen and (max-width: 990px) {
-
   .image-container {
     width: 332px;
   }
-
-
 }
 
 @media screen and (max-width: 790px) {
-
   .image-container {
     width: 540px;
   }
 }
 
 @media screen and (max-width: 414px) {
-  .headshot-container{
+  .headshot-container {
     display: flex;
     justify-content: center;
   }
 
-  .gallery, .row-gallery {
+  .gallery,
+  .row-gallery {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .img-container{
+  .img-container {
     overflow: visible;
   }
   .img-container button {
@@ -220,12 +241,12 @@ main {
     font-size: 16px;
   }
 
-  .image-container img{
+  .image-container img {
     width: 100%;
     height: auto;
   }
 
-  .image-container{
+  .image-container {
     width: 250px;
   }
 }
