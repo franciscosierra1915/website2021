@@ -54,6 +54,15 @@ p {
   margin-bottom: 0 !important;
 }
 
+.social-media img{
+  margin: 5px;
+  transition: transform 0.5s,
+}
+
+.social-media img:hover{
+  transform: scale(1.2);
+}
+
 .about-me {
   margin-bottom: 15px;
 }

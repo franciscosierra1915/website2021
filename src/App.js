@@ -6,7 +6,9 @@ import Gallery from './components/Gallery';
 import Portfolio from './components/Portfolio';
 import {storage} from './firebase';
 import WaveShader from "./components/WaveShader"
-// import photos from './photos/photos'
+import linkedin from "./assets/linkedin.png";
+import twitter from "./assets/twitter.png";
+import github from "./assets/github.png";
 
 
 function App() {
@@ -43,6 +45,11 @@ function App() {
               <div className="bio">
                 <h1>Hello world :)</h1>
                 <p>My name is Francisco Sierra, but you can call me Frank! I'm a web developer who loves photography, video and 3D animations. I write code that merges these things.</p>
+                <div class="social-media">
+                <a href="https://www.linkedin.com/in/francisco-sierra-munoz/" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="LinkedIN icon"/></a>
+                <a href="https://github.com/franciscosierra1915" target="_blank" rel="noopener noreferrer"><img src={github} alt="Github icon"/></a>
+                <a href="https://twitter.com/franksierra_" target="_blank" rel="noopener noreferrer"><img src={twitter} alt="Twitter icon"/></a>
+                </div>
               </div>
             </Col>
           </Row>
