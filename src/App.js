@@ -44,7 +44,7 @@ function App() {
             <Col className="bio-container">
               <div className="bio">
                 <h1>Hello world :)</h1>
-                <p>My name is Francisco Sierra, but you can call me Frank! I'm a web developer who loves photography, video and 3D animations. I write code that merges these things.</p>
+                <p>My name is Francisco Sierra, but you can call me Frank! I'm a UX Developer who loves photography, video and 3D animations. I write code that merges these things.</p>
                 <div class="social-media">
                 <a href="https://www.linkedin.com/in/francisco-sierra-munoz/" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="LinkedIN icon"/></a>
                 <a href="https://github.com/franciscosierra1915" target="_blank" rel="noopener noreferrer"><img src={github} alt="Github icon"/></a>
