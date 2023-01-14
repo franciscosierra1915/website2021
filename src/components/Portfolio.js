@@ -7,55 +7,48 @@ const Portfolio = () => {
         <>
             <Row>
                 <p>Code:</p>
-                <Col>
-                Phaser.js:
+                <Col lg={6}>
+                    Phaser.js:
                     <ul>
                         <li>
                             <a href="https://franciscosierra1915.github.io/codeys_counting/" target="_blank" rel="noopener noreferrer">Codey's Counting Conundrum</a>
                         </li>
                     </ul>
                 </Col>
-                <Col>
-                ThreeJS:
+                <Col lg={6}>
+                    ThreeJS:
                     <ul>
                         <li>
                             <a href="https://tech-friend-64422.web.app/" target="_blank" rel="noopener noreferrer">Tech Friend</a>
                         </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="https://franciscosierra1915.github.io/sea-of-particles/" target="_blank" rel="noopener noreferrer">Sea of Particles</a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="https://franciscosierra1915.github.io/scroll-three-js/" target="_blank" rel="noopener noreferrer">Scroll Animation</a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="https://franciscosierra1915.github.io/interactive-galaxy/" target="_blank" rel="noopener noreferrer">Interactive Galaxy</a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="https://github.com/franciscosierra1915/3d-text" target="_blank" rel="noopener noreferrer">3D Text</a>
-                        </li>
-                    </ul>
-                    <ul>
                         <li>
                             <a href="https://franciscosierra1915.github.io/fox/" target="_blank" rel="noopener noreferrer">Animated model with Blender</a>
                         </li>
+                        <li>
+                            <a href="https://interactive-tic-tac-toe.web.app/" target="_blank" rel="noopener noreferrer">Interactive Tic-Tac-Toe</a>
+                        </li>
+                        <li>
+                            <a href="https://franciscosierra1915.github.io/sea-of-particles/" target="_blank" rel="noopener noreferrer">Sea of Particles</a>
+                        </li>
+                        <li>
+                            <a href="https://franciscosierra1915.github.io/scroll-three-js/" target="_blank" rel="noopener noreferrer">Scroll Animation</a>
+                        </li>
+                        <li>
+                            <a href="https://franciscosierra1915.github.io/interactive-galaxy/" target="_blank" rel="noopener noreferrer">Interactive Galaxy</a>
+                        </li>
+                        <li>
+                            <a href="https://franciscosierra1915.github.io/3d-text/" target="_blank" rel="noopener noreferrer">3D Text</a>
+                        </li>
                     </ul>
                 </Col>
-                {/* <Col>
-                    WebGL Shaders:
-                        <ul>
-                            <li>
-                                <a href="https://my-portfolio-c19b5.web.app/" target="_blank" rel="noopener noreferrer">My Old Website</a>
-                            </li>
-                        </ul>
-                </Col> */}
+                <Col lg={6}>
+                    React Three Fiber:
+                    <ul>
+                        <li>
+                            <a href="https://franciscosierra1915.github.io/bananas/" target="_blank" rel="noopener noreferrer">Apples</a>
+                        </li>
+                    </ul>
+                </Col>
                 {/* <Col>
                 Webflow:
                     <ul>
