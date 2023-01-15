@@ -17,8 +17,8 @@ function App() {
             <Col className="headshot-container">
               <Link to="/">
                 <div className="headshot-container">
-                  <WaveShader/>
-                  </div>
+                  <WaveShader />
+                </div>
               </Link>
             </Col>
             <Col className="bio-container">
@@ -26,15 +26,15 @@ function App() {
                 <h1>Hello world :)</h1>
                 <p>My name is Francisco Sierra, but you can call me Frank! I'm a UX Developer who loves 3D animations on the web. I write code that merges these things.</p>
                 <div className="social-media">
-                <a href="https://www.linkedin.com/in/francisco-sierra-munoz/" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="LinkedIN icon"/></a>
-                <a href="https://github.com/franciscosierra1915" target="_blank" rel="noopener noreferrer"><img src={github} alt="Github icon"/></a>
-                <a href="https://twitter.com/franksierra_" target="_blank" rel="noopener noreferrer"><img src={twitter} alt="Twitter icon"/></a>
+                  <a href="https://www.linkedin.com/in/francisco-sierra-munoz/" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="LinkedIN icon" /></a>
+                  <a href="https://github.com/franciscosierra1915" target="_blank" rel="noopener noreferrer"><img src={github} alt="Github icon" /></a>
+                  <a href="https://twitter.com/franksierra_" target="_blank" rel="noopener noreferrer"><img src={twitter} alt="Twitter icon" /></a>
                 </div>
               </div>
             </Col>
           </Row>
           <Switch>
-            <Route exact path="/" render={() => <Portfolio/>}/>
+            <Route exact path="/" render={() => <Portfolio />} />
           </Switch>
         </Container>
       </Router>
